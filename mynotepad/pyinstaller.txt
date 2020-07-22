@@ -1,0 +1,11 @@
+# Сборка приложения 
+pyinstaller mynotepad.py
+
+# Сборка приложения в виде одного файла
+pyinstaller -F mynotepad.py
+
+# noconsole
+pyinstaller -w mynotepad.py
+
+# icon
+pyinstaller -w -i "D:\Программирование\Python\Scripts\tkinter\mynotepad\ico.ico" mynotepad.py
