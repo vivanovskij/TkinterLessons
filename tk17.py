@@ -17,9 +17,9 @@ try:
         'https://api.privatbank.ua/p24api/pubinfo?json&exchange&coursid=5')
     data = html.read()
     JSON_object = json.loads(data)
-    # print(JSON_object)
 except:
     messagebox.showinfo('Ошибка', 'Ошибка получения курсов валют')
+
 
 # Functions
 
@@ -46,10 +46,6 @@ header_frame.pack(fill=X)
 h_font = 'Arial 12 bold'
 currency_font = 'Arial 10'
 h_bg = '#ccc'
-
-# header_frame.grid_columnconfigure(0, weight=1)
-# header_frame.grid_columnconfigure(1, weight=1)
-# header_frame.grid_columnconfigure(2, weight=1)
 
 header = ('Валюта', 'Покупка', 'Продажа')
 
