@@ -22,8 +22,6 @@ except:
 
 
 # Functions
-
-
 def exchage():
     for i in res_entries:
         count = res_entries.index(i)
