@@ -29,8 +29,8 @@ def exchage():
             cash = float(e_uah.get())
             i.delete(0, END)
             exchange = float(JSON_object[count]['sale'])
-            res = cash / exchange
-            i.insert(0, round(res, 2))
+            res = round(cash / exchange, 2)
+            i.insert(0, f'{res:.2f}')
         except:
             messagebox.showwarning('Неверный формат', 'Неверный формат числа')
             return
